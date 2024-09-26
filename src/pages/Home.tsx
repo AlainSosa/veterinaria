@@ -1,23 +1,43 @@
-function App() {
+import Layout from "../components/Layout";
+
+function Home() {
   return (
-    <>
-      <header className=" bg-blue-500 text-white flex place-content-between" >
+    <Layout>
+      <header className=" bg-blue-500 text-white flex place-content-between">
         <div>
           <h1 className="text-3xl font-bold max-w-80 text-center p-4">
             Veterinaria Don Gato
           </h1>
         </div>
-        
+
         <div>
           <nav>
             <ul className="flex p-6 font-bold">
-              <li className="p-4 items-center"><a className=" hover:text-lime-300 hover:underline" href="#">Inicio</a></li>
-              <li className="p-4"><a className="hover:text-lime-300 hover:underline" href="#">Registro</a></li>
-              <li className="p-4"><a className="hover:text-lime-300 hover:underline" href="#">Citas</a></li>
-              <li className="p-4"><a className="hover:text-lime-300 hover:underline" href="footer">Contactos</a></li>
+              <li className="p-4 items-center">
+                <a className=" hover:text-lime-300 hover:underline" href="#">
+                  Inicio
+                </a>
+              </li>
+              <li className="p-4">
+                <a className="hover:text-lime-300 hover:underline" href="#">
+                  Registro
+                </a>
+              </li>
+              <li className="p-4">
+                <a className="hover:text-lime-300 hover:underline" href="#">
+                  Citas
+                </a>
+              </li>
+              <li className="p-4">
+                <a
+                  className="hover:text-lime-300 hover:underline"
+                  href="footer"
+                >
+                  Contactos
+                </a>
+              </li>
             </ul>
           </nav>
-
         </div>
       </header>
       <body>
@@ -33,18 +53,17 @@ function App() {
             Protege a tu mascota con su registro
           </p>
         </div>
-        
-        <article className="grid grid-cols-3">
 
+        <article className="grid grid-cols-3">
           <div className="w-3/4 justify-center shadow-lg p-2 m-auto my-10">
             <h1 className="w-full px-2 m-auto font-bold text-center content-center text-lg text-blue-500 ">
               Quienes somos
             </h1>
             <p className="w-full px-2 font-bold text-center text-sm text-slate-500 ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-              consectetur repellendus quibusdam iusto. Saepe et quo expedita eum.
-              Odit in ab alias inventore laudantium cumque quidem, dolores labore
-              commodi doloribus.
+              consectetur repellendus quibusdam iusto. Saepe et quo expedita
+              eum. Odit in ab alias inventore laudantium cumque quidem, dolores
+              labore commodi doloribus.
             </p>
           </div>
 
@@ -54,9 +73,9 @@ function App() {
             </h1>
             <p className="w-full px-2 font-bold text-center text-sm text-slate-500 ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-              consectetur repellendus quibusdam iusto. Saepe et quo expedita eum.
-              Odit in ab alias inventore laudantium cumque quidem, dolores labore
-              commodi doloribus.
+              consectetur repellendus quibusdam iusto. Saepe et quo expedita
+              eum. Odit in ab alias inventore laudantium cumque quidem, dolores
+              labore commodi doloribus.
             </p>
           </div>
 
@@ -66,14 +85,14 @@ function App() {
             </h1>
             <p className="w-full px-2 font-bold text-center text-sm text-slate-500 ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-              consectetur repellendus quibusdam iusto. Saepe et quo expedita eum.
-              Odit in ab alias inventore laudantium cumque quidem, dolores labore
-              commodi doloribus.
+              consectetur repellendus quibusdam iusto. Saepe et quo expedita
+              eum. Odit in ab alias inventore laudantium cumque quidem, dolores
+              labore commodi doloribus.
             </p>
           </div>
         </article>
-        
-        <footer className="w-full bg-blue-500 p-4 grid grid-cols-2"  >
+
+        <footer className="w-full bg-blue-500 p-4 grid grid-cols-2">
           <ul className="mx-auto">
             <li className="text-white font-bold ml-6 ">
               <span></span>
@@ -92,14 +111,14 @@ function App() {
           </ul>
 
           <ul className="mx-auto text-slate-300">
-           <li>Telf: 22656447</li>
-           <li>correo: dongatogmail.com</li>  
-           <li>Ubicacion: Zona central</li>  
-          </ul>  
+            <li>Telf: 22656447</li>
+            <li>correo: dongatogmail.com</li>
+            <li>Ubicacion: Zona central</li>
+          </ul>
         </footer>
       </body>
-    </>
+    </Layout>
   );
 }
 
-export default App;
+export default Home;
