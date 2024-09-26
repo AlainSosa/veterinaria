@@ -1,48 +1,10 @@
 import { NavLink } from "react-router-dom";
-import Layout from "../components/Layout";
+
 
 function Home() {
   return (
-    <Layout>
-      <header className=" bg-blue-500 text-white flex place-content-between">
-        <div>
-          <h1 className="text-3xl font-bold max-w-80 text-center p-4">
-            Veterinaria Don Gato
-          </h1>
-        </div>
-
-        <div>
-          <nav>
-            <ul className="flex p-6 font-bold">
-              <li className="p-4 items-center">
-                <NavLink to="/"></NavLink>
-                <a className=" hover:text-lime-300 hover:underline" href="#">
-                  Inicio
-                </a>
-              </li>
-              <li className="p-4">
-                <a className="hover:text-lime-300 hover:underline" href="#">
-                  Registro
-                </a>
-              </li>
-              <li className="p-4">
-                <a className="hover:text-lime-300 hover:underline" href="#">
-                  Citas
-                </a>
-              </li>
-              <li className="p-4">
-                <a
-                  className="hover:text-lime-300 hover:underline"
-                  href="footer"
-                >
-                  Contactos
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <body>
+    <>
+      
         <div className="flex flex-col:2 m-auto  w-3/4  content-center shadow-lg p-4 mt-10">
           <figure className=" max-w-80 mx-auto min-w-52 ">
             <img
@@ -53,7 +15,9 @@ function Home() {
           </figure>
           <p className="w-auto m-auto px-2 font-bold text-center content-around text-2xl text-blue-500 ">
             Protege a tu mascota con su registro
+          <NavLink to="/registro" className="text-white bg-green-500">CLick aqui</NavLink>
           </p>
+          
         </div>
 
         <article className="grid grid-cols-3">
@@ -118,8 +82,8 @@ function Home() {
             <li>Ubicacion: Zona central</li>
           </ul>
         </footer>
-      </body>
-    </Layout>
+      
+    </>
   );
 }
 
