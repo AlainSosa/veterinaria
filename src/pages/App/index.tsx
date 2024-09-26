@@ -11,6 +11,7 @@ const AppRoutes = () => {
     { path: "/", element: <Home/> },
     { path: "/citas", element: <Citas/> },
     { path: "/registro", element: <Registro/> },
+    {path:"/registro",element:<Registro/>}
     
   ]);
   return routes;
