@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Layout from "../components/Layout";
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
           <nav>
             <ul className="flex p-6 font-bold">
               <li className="p-4 items-center">
+                <NavLink to="/"></NavLink>
                 <a className=" hover:text-lime-300 hover:underline" href="#">
                   Inicio
                 </a>
