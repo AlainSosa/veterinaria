@@ -1,7 +1,7 @@
 import { useRoutes, BrowserRouter } from "react-router-dom";
 
 import Home from "../Home";
-import Citas from "../Citas";
+import Citas from '../Citas';
 import Registro from "../Registro";
 import { NavBar } from "../../components/NavBar";
 import "./App.css";
