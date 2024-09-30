@@ -4,6 +4,7 @@ import Home from "../Home";
 import Citas from '../Citas';
 import Registro from "../Registro";
 import { NavBar } from "../../components/NavBar";
+import Footer from "@/components/Footer";
 import "./App.css";
 
 const AppRoutes = () => {
@@ -19,9 +20,11 @@ const AppRoutes = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    
+    <BrowserRouter >
       <NavBar/>
       <AppRoutes />
+      <Footer/>
     </BrowserRouter>
   );
 };

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <header className=" bg-blue-500 text-white flex place-content-between">
+    <header className=" bg-blue-500 text-white flex place-content-between shadow-2xl">
         <div>
           <h1 className="text-3xl font-bold max-w-80 text-center p-4">
             Veterinaria Don Gato
@@ -11,7 +11,7 @@ export const NavBar = () => {
 
         <div>
           <nav>
-            <ul className="flex p-6 font-bold">
+            <ul className="flex p-6 font-bold ">
               <li className="p-4 items-center">
                 <NavLink to="/" className="hover:text-lime-300 hover:underline">Inicio</NavLink>
               </li>
