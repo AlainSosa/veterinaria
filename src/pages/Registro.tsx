@@ -1,49 +1,25 @@
+import ClientsData from "@/components/ClientsData";
+import { clientsData } from "@/data/db";
 
-
-function Registro() {
+export default function Registro() {
   return (
+    <main className=" max-w-7xl mx-auto py-20 ">
+      <div>
+        <h2 className="text-4xl font-black">Registro de mascotas</h2>
 
-    <>
-      <div className=" max-w-3xl mx-auto flex flex-col ">
+        <div className="space-y-3 mt-10">
+          <tr className="w-full p-3 flex justify-between">
+            <th>Id</th>
+            <th>Nombre mascota</th>
+            <th>Tipo</th>
+            <th>Edad</th>
+          </tr>
 
-        <h1 className="font-bold text-base mt-10">FORMULARIO DE REGISTRO</h1>
-            
-            <form action="" className="m-0-10-10-10 flex-grow">
-              <div className="mb-4">
-
-                <label htmlFor="" className="pr-4">Nombre del propietario</label>
-                <input type="text" className=" border-2"/>
-
-              </div>
-              <div className="pb-4">
-                <label htmlFor="" className="pr-4">Nombre de la mascota</label>
-                <input type="text" className="border-2" />
-              </div>  
-              <div className="pb-4">
-                
-                <label htmlFor="" className="pr-4">Edad de la mascota</label>
-                
-                <input type="number" className="border-2 "/>
-              </div>
-
-              
-
-              <div className="pb-4">
-                
-                <label htmlFor="">Foto de la mascota</label>
-                <br />
-                <input type="image" className="w-52 h-52 border-"/>
-              </div>
-
-
-            </form>
-
-
+          {clientsData.map((item) => (
+            <ClientsData key={item.id} item={item} />
+          ))}
         </div>
-      
-      
-    </>
-  )
+      </div>
+    </main>
+  );
 }
-
-export default Registro;
